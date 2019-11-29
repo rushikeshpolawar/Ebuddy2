@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/my_bg_animreg"
+        android:id="@+id/myLayoutRegistration"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:text="Name"
+            android:textColor="#ff000000"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/editTextFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:ems="16"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editTextFirstName"
+            android:text="Age"
+            android:textColor="#ff000000"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/editTextDatePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextFirstName"
+            android:layout_alignStart="@+id/editTextFirstName"
+            android:layout_below="@+id/textView4"
+            android:ems="16"
+            android:hint="Age"
+            android:inputType="number"
+            android:maxLength="2"/>
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_below="@+id/editTextDatePicker"
+            android:text="Gender"
+            android:textColor="#ff000000"
+            android:textSize="16dp" />
+        <Spinner
+            android:id="@+id/spinnerGender"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editTextDatePicker"
+            android:layout_alignRight="@+id/editTextDatePicker"
+            android:layout_below="@+id/editTextDatePicker"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_below="@+id/spinnerGender"
+            android:text="Mobile Number"
+            android:textColor="#ff000000"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/editTextPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spinnerGender"
+            android:layout_alignStart="@+id/spinnerGender"
+            android:layout_below="@+id/textView3"
+            android:ems="16"
+            android:maxLength="10"
+            android:hint="Phone Number"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editTextPhoneNumber"
+            android:text="Blood Group"
+            android:textColor="#ff000000"
+            android:textSize="16dp" />
+
+
+        <Spinner
+            android:id="@+id/spinnerBloodGroup"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextPhoneNumber"
+            android:layout_alignStart="@+id/editTextPhoneNumber"
+            android:layout_below="@+id/editTextPhoneNumber"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView7"
+            android:layout_alignStart="@+id/textView7"
+            android:layout_below="@+id/spinnerBloodGroup"
+            android:layout_marginTop="8dp"
+            android:text="Willing to donate blood?"
+            android:textColor="#ff000000"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView8"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+          <RadioButton
+              android:id="@+id/radioButton"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="9dp"
+              android:text="Yes"
+              />
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="9dp"
+                android:text="No"/>
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView8"
+            android:layout_alignStart="@+id/textView8"
+            android:layout_below="@+id/radioGroup"
+            android:text="City"
+            android:textColor="#ff000000"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/editTextCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/spinnerBloodGroup"
+            android:layout_alignRight="@+id/spinnerBloodGroup"
+            android:layout_below="@+id/textView9"
+            android:ems="16"
+            android:hint="City"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView9"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_below="@+id/editTextCity"
+            android:text="State"
+            android:textColor="#ff000000"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/editTextState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextCity"
+            android:layout_alignStart="@+id/editTextCity"
+            android:layout_below="@+id/textView10"
+            android:ems="16"
+            android:hint="State"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editTextState"
+            android:text="Email"
+            android:textColor="#ff000000"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextPhoneNumber"
+            android:layout_alignStart="@+id/editTextPhoneNumber"
+            android:layout_below="@+id/textView5"
+            android:ems="16"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextEmail"
+            android:text="Password"
+            android:textColor="#ff000000"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spinnerBloodGroup"
+            android:layout_alignStart="@+id/spinnerBloodGroup"
+            android:layout_below="@+id/textView11"
+            android:ems="16"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextPassword"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Register" />
+
+
+
+
+
+    </RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

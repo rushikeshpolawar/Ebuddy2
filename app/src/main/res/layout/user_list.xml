@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/parentLayout"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    >
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ListView  app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+
+        android:background="@android:color/transparent"
+        app:backgroundTint="#ba3e04"
+        app:layout_anchor="@+id/listView"
+        app:layout_anchorGravity="right|bottom"
+        tools:layout_editor_absoluteX="330dp"
+        tools:layout_editor_absoluteY="497dp" />
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="BLOOD"
+        android:elevation="6dp"
+        android:textSize="25dp"
+        android:textColor="#fff"
+        app:layout_anchor="@id/fab"
+        app:layout_anchorGravity="center"
+        android:textStyle="bold"/>
+
+
+</android.support.design.widget.CoordinatorLayout>
